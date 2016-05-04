@@ -1,0 +1,29 @@
+{
+  "name": "prize",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "img-url": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "event": {
+      "type": "belongsTo",
+      "model": "event",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

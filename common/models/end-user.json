@@ -7,13 +7,14 @@
   },
   "properties": {
     "username": {
-      "type": "string",
-      "required": true
+      "type": "string"
+    },
+    "phone-number": {
+      "type": "number"
     }
   },
   "validations": [],
-  "relations": {
-  },
+  "relations": {},
   "acls": [
     {
       "accessType": "EXECUTE",

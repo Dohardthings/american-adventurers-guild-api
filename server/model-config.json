@@ -36,5 +36,13 @@
   "end-user": {
     "dataSource": "db",
     "public": true
+  },
+  "event": {
+    "dataSource": "db",
+    "public": true
+  },
+  "prize": {
+    "dataSource": "db",
+    "public": true
   }
 }

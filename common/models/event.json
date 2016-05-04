@@ -1,0 +1,41 @@
+{
+  "name": "event",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "cost": {
+      "type": "number"
+    },
+    "etc": {
+      "type": "number"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "string"
+    },
+    "search-area": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "prizes": {
+      "type": "hasOne",
+      "model": "prize",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
