@@ -10,7 +10,7 @@
       "type": "string"
     },
     "phone-number": {
-      "type": "number"
+      "type": "string"
     }
   },
   "validations": [],

@@ -13,10 +13,10 @@
       "type": "string"
     },
     "cost": {
-      "type": "number"
+      "type": "string"
     },
     "etc": {
-      "type": "number"
+      "type": "string"
     },
     "active": {
       "type": "boolean"
