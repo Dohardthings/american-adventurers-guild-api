@@ -34,6 +34,16 @@
       "type": "hasOne",
       "model": "prize",
       "foreignKey": ""
+    },
+    "clues": {
+      "type": "hasMany",
+      "model": "clue",
+      "foreignKey": ""
+    },
+    "end-user": {
+      "type": "belongsTo",
+      "model": "end-user",
+      "foreignKey": ""
     }
   },
   "acls": [],

@@ -44,5 +44,9 @@
   "prize": {
     "dataSource": "db",
     "public": true
+  },
+  "clue": {
+    "dataSource": "db",
+    "public": true
   }
 }
