@@ -30,10 +30,10 @@
   },
   "validations": [],
   "relations": {
-    "prizes": {
+    "prize": {
       "type": "hasOne",
       "model": "prize",
-      "foreignKey": ""
+      "foreignKey": "eventId"
     },
     "clues": {
       "type": "hasMany",
