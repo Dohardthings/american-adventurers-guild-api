@@ -6,11 +6,13 @@
     "validateUpsert": true
   },
   "properties": {
-    "username": {
-      "type": "string"
-    },
     "phone-number": {
-      "type": "string"
+      "type": "string",
+      "required": false
+    },
+    "username": {
+      "type": "string",
+      "required": false
     }
   },
   "validations": [],
@@ -19,15 +21,32 @@
       "type": "hasMany",
       "model": "event",
       "foreignKey": ""
+    },
+    "accessTokens": {
+      "type": "hasMany",
+      "model": "AccessToken",
+      "foreignKey": "userId"
+    },
+    "roles": {
+      "type": "hasMany",
+      "model": "Role",
+      "foreignKey": "principalId",
+      "through": "RoleMapping"
     }
   },
   "acls": [
     {
       "accessType": "EXECUTE",
       "principalType": "ROLE",
-      "principalId": "$authenticated",
+      "principalId": "admin",
       "permission": "ALLOW",
       "property": "find"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW"
     }
   ],
   "methods": {}
