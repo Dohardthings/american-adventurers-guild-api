@@ -44,6 +44,11 @@
       "type": "belongsTo",
       "model": "end-user",
       "foreignKey": ""
+    },
+    "purchases": {
+      "type": "hasMany",
+      "model": "purchase",
+      "foreignKey": ""
     }
   },
   "acls": [],
