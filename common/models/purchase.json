@@ -1,0 +1,32 @@
+{
+  "name": "purchase",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "string"
+    },
+    "in-progress": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "event": {
+      "type": "belongsTo",
+      "model": "event",
+      "foreignKey": ""
+    },
+    "end-user": {
+      "type": "belongsTo",
+      "model": "end-user",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
