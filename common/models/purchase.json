@@ -11,7 +11,7 @@
     },
     "in-progress": {
       "type": "boolean",
-      "default": false
+      "default": true
     }
   },
   "validations": [],
