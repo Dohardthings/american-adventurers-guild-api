@@ -14,8 +14,8 @@ var config = {
   }
 };
 
-if (process.env.HOST) {
-  config['loopback-component-jsonapi'].host = process.env.HOST;
+if (process.env.API_URL) {
+  config['loopback-component-jsonapi'].host = process.env.API_URL;
 }
 
 module.exports = config;
