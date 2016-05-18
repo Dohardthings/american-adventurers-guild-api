@@ -15,6 +15,7 @@ var config = {
 };
 
 if (process.env.API_URL) {
+  console.log()
   config['loopback-component-jsonapi'].host = process.env.API_URL;
 }
 
